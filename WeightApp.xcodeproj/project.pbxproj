@@ -307,8 +307,8 @@
 			isa = PBXGroup;
 			children = (
 				2A3A089F29EF4D3D00EB8E8E /* GoogleService-Info.plist */,
-				CA4C9EDE29C659F00041C482 /* WeightApp */,
-				CA4C9EF029C659F10041C482 /* WeightApp Watch App */,
+				CA4C9EDE29C659F00041C482 /* WeightApp-iOS */,
+				CA4C9EF029C659F10041C482 /* WeightApp-watchOS */,
 				CA4C9EDD29C659F00041C482 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA4C9EDE29C659F00041C482 /* WeightApp */ = {
+		CA4C9EDE29C659F00041C482 /* WeightApp-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				CA4C9EDF29C659F00041C482 /* WeightAppApp.swift */,
@@ -333,7 +333,7 @@
 				21525F4829DA1BA200C365D8 /* Views */,
 				CA4C9EE529C659F10041C482 /* Preview Content */,
 			);
-			path = WeightApp;
+			path = "WeightApp-iOS";
 			sourceTree = "<group>";
 		};
 		CA4C9EE529C659F10041C482 /* Preview Content */ = {
@@ -344,7 +344,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CA4C9EF029C659F10041C482 /* WeightApp Watch App */ = {
+		CA4C9EF029C659F10041C482 /* WeightApp-watchOS */ = {
 			isa = PBXGroup;
 			children = (
 				CA803E9629CA1D0E00ADDB75 /* Models */,
@@ -354,7 +354,7 @@
 				CA4C9EF529C659F10041C482 /* Assets.xcassets */,
 				CA4C9EF729C659F10041C482 /* Preview Content */,
 			);
-			path = "WeightApp Watch App";
+			path = "WeightApp-watchOS";
 			sourceTree = "<group>";
 		};
 		CA4C9EF729C659F10041C482 /* Preview Content */ = {
