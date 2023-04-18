@@ -1,0 +1,1020 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21525F4529D22C2A00C365D8 /* WeightDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9F0B29C66D160041C482 /* WeightDataModel.swift */; };
+		21525F4629D22C2D00C365D8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9F0529C65C760041C482 /* MainViewModel.swift */; };
+		21525F4729D22CF800C365D8 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9F0929C66C8B0041C482 /* ChartView.swift */; };
+		21525F4C29DA1D0D00C365D8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21525F4B29DA1D0D00C365D8 /* SettingsView.swift */; };
+		21525F4E29DA1ECC00C365D8 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21525F4D29DA1ECC00C365D8 /* TabBarView.swift */; };
+		21525F5029DA1FD100C365D8 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21525F4F29DA1FD100C365D8 /* ChartsView.swift */; };
+		21525F5229DA1FE300C365D8 /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21525F5129DA1FE300C365D8 /* ScaleView.swift */; };
+		21525F5429DA24D200C365D8 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21525F5329DA24D200C365D8 /* HistoryView.swift */; };
+		2A3A080F29EF2B8000EB8E8E /* CalorieDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A080E29EF2B8000EB8E8E /* CalorieDataModel.swift */; };
+		2A3A081029EF2BC400EB8E8E /* CalorieDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A080E29EF2B8000EB8E8E /* CalorieDataModel.swift */; };
+		2A3A082129EF3D1B00EB8E8E /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A082029EF3D1A00EB8E8E /* StatisticsView.swift */; };
+		2A3A082329EF3D2700EB8E8E /* CalorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A082229EF3D2700EB8E8E /* CalorieView.swift */; };
+		2A3A082529EF3D2F00EB8E8E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A082429EF3D2F00EB8E8E /* HistoryView.swift */; };
+		2A3A082D29EF41BB00EB8E8E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A082C29EF41BB00EB8E8E /* FirebaseAnalytics */; };
+		2A3A082F29EF41BB00EB8E8E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A082E29EF41BB00EB8E8E /* FirebaseAnalyticsOnDeviceConversion */; };
+		2A3A083129EF41BB00EB8E8E /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A083029EF41BB00EB8E8E /* FirebaseAnalyticsSwift */; };
+		2A3A083329EF41BB00EB8E8E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A083229EF41BB00EB8E8E /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		2A3A083529EF41BB00EB8E8E /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A083429EF41BB00EB8E8E /* FirebaseAppCheck */; };
+		2A3A083729EF41BB00EB8E8E /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A083629EF41BB00EB8E8E /* FirebaseAppDistribution-Beta */; };
+		2A3A083929EF41BB00EB8E8E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A083829EF41BB00EB8E8E /* FirebaseAuth */; };
+		2A3A083B29EF41BB00EB8E8E /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A083A29EF41BB00EB8E8E /* FirebaseAuthCombine-Community */; };
+		2A3A083D29EF41BB00EB8E8E /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A083C29EF41BB00EB8E8E /* FirebaseCrashlytics */; };
+		2A3A083F29EF41BB00EB8E8E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A083E29EF41BB00EB8E8E /* FirebaseDatabase */; };
+		2A3A084129EF41BB00EB8E8E /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A084029EF41BB00EB8E8E /* FirebaseDatabaseSwift */; };
+		2A3A084329EF41BB00EB8E8E /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A084229EF41BB00EB8E8E /* FirebaseDynamicLinks */; };
+		2A3A084529EF41BB00EB8E8E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A084429EF41BB00EB8E8E /* FirebaseFirestore */; };
+		2A3A084729EF41BB00EB8E8E /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A084629EF41BB00EB8E8E /* FirebaseFirestoreCombine-Community */; };
+		2A3A084929EF41BB00EB8E8E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A084829EF41BB00EB8E8E /* FirebaseFirestoreSwift */; };
+		2A3A084B29EF41BB00EB8E8E /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A084A29EF41BB00EB8E8E /* FirebaseFunctions */; };
+		2A3A084D29EF41BB00EB8E8E /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A084C29EF41BB00EB8E8E /* FirebaseFunctionsCombine-Community */; };
+		2A3A084F29EF41BB00EB8E8E /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A084E29EF41BB00EB8E8E /* FirebaseInAppMessaging-Beta */; };
+		2A3A085129EF41BB00EB8E8E /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A085029EF41BB00EB8E8E /* FirebaseInAppMessagingSwift-Beta */; };
+		2A3A085329EF41BB00EB8E8E /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A085229EF41BB00EB8E8E /* FirebaseInstallations */; };
+		2A3A085529EF41BB00EB8E8E /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A085429EF41BB00EB8E8E /* FirebaseMLModelDownloader */; };
+		2A3A085729EF41BB00EB8E8E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A085629EF41BB00EB8E8E /* FirebaseMessaging */; };
+		2A3A085929EF41BB00EB8E8E /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A085829EF41BB00EB8E8E /* FirebasePerformance */; };
+		2A3A085B29EF41BB00EB8E8E /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A085A29EF41BB00EB8E8E /* FirebaseRemoteConfig */; };
+		2A3A085D29EF41BB00EB8E8E /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A085C29EF41BB00EB8E8E /* FirebaseRemoteConfigSwift */; };
+		2A3A085F29EF41BB00EB8E8E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A085E29EF41BB00EB8E8E /* FirebaseStorage */; };
+		2A3A086129EF41BB00EB8E8E /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3A086029EF41BB00EB8E8E /* FirebaseStorageCombine-Community */; };
+		2A3A087229EF480000EB8E8E /* ForgotPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A087129EF480000EB8E8E /* ForgotPasswordService.swift */; };
+		2A3A087429EF481800EB8E8E /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A087329EF481800EB8E8E /* ForgotPasswordViewModel.swift */; };
+		2A3A087729EF485000EB8E8E /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A087629EF485000EB8E8E /* TextInputView.swift */; };
+		2A3A087929EF486A00EB8E8E /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A087829EF486A00EB8E8E /* PasswordInputView.swift */; };
+		2A3A087B29EF487D00EB8E8E /* LayoutPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A087A29EF487D00EB8E8E /* LayoutPreviews.swift */; };
+		2A3A087D29EF488F00EB8E8E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A087C29EF488F00EB8E8E /* ButtonView.swift */; };
+		2A3A087F29EF48A400EB8E8E /* CloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A087E29EF48A400EB8E8E /* CloseView.swift */; };
+		2A3A088229EF48C700EB8E8E /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A088129EF48C700EB8E8E /* LoginCredentials.swift */; };
+		2A3A088429EF48DA00EB8E8E /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A088329EF48DA00EB8E8E /* LoginService.swift */; };
+		2A3A088629EF48EB00EB8E8E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A088529EF48EB00EB8E8E /* LoginViewModel.swift */; };
+		2A3A088929EF491400EB8E8E /* NewUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A088829EF491400EB8E8E /* NewUserInfo.swift */; };
+		2A3A088B29EF492300EB8E8E /* NewUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A088A29EF492300EB8E8E /* NewUserService.swift */; };
+		2A3A088D29EF493500EB8E8E /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A088C29EF493500EB8E8E /* NewUserView.swift */; };
+		2A3A089129EF496600EB8E8E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A089029EF496600EB8E8E /* HomeView.swift */; };
+		2A3A089529EF49D500EB8E8E /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A089429EF49D500EB8E8E /* SessionUserDetails.swift */; };
+		2A3A089729EF49E600EB8E8E /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A089629EF49E600EB8E8E /* SessionService.swift */; };
+		2A3A089A29EF4BCD00EB8E8E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A089929EF4BCD00EB8E8E /* SignInView.swift */; };
+		2A3A089C29EF4BDD00EB8E8E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A089B29EF4BDD00EB8E8E /* RegisterView.swift */; };
+		2A3A089E29EF4BEF00EB8E8E /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A089D29EF4BEF00EB8E8E /* ForgotPasswordView.swift */; };
+		2A3A08A029EF4D3D00EB8E8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A3A089F29EF4D3D00EB8E8E /* GoogleService-Info.plist */; };
+		CA4C9EE029C659F00041C482 /* WeightAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9EDF29C659F00041C482 /* WeightAppApp.swift */; };
+		CA4C9EE429C659F10041C482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4C9EE329C659F10041C482 /* Assets.xcassets */; };
+		CA4C9EE729C659F10041C482 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4C9EE629C659F10041C482 /* Preview Assets.xcassets */; };
+		CA4C9EED29C659F10041C482 /* WeightApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CA4C9EEC29C659F10041C482 /* WeightApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CA4C9EF229C659F10041C482 /* WeightAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9EF129C659F10041C482 /* WeightAppApp.swift */; };
+		CA4C9EF429C659F10041C482 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9EF329C659F10041C482 /* MainView.swift */; };
+		CA4C9EF629C659F10041C482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4C9EF529C659F10041C482 /* Assets.xcassets */; };
+		CA4C9EF929C659F10041C482 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4C9EF829C659F10041C482 /* Preview Assets.xcassets */; };
+		CA4C9F0629C65C760041C482 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9F0529C65C760041C482 /* MainViewModel.swift */; };
+		CA4C9F0829C660CE0041C482 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9F0729C660CE0041C482 /* SettingsView.swift */; };
+		CA4C9F0A29C66C8B0041C482 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9F0929C66C8B0041C482 /* ChartView.swift */; };
+		CA4C9F0C29C66D160041C482 /* WeightDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9F0B29C66D160041C482 /* WeightDataModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA4C9EEE29C659F10041C482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA4C9ED429C659F00041C482 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA4C9EEB29C659F10041C482;
+			remoteInfo = "WeightApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA4C9EFF29C659F10041C482 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CA4C9EED29C659F10041C482 /* WeightApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		21525F4B29DA1D0D00C365D8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		21525F4D29DA1ECC00C365D8 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		21525F4F29DA1FD100C365D8 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		21525F5129DA1FE300C365D8 /* ScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = "<group>"; };
+		21525F5329DA24D200C365D8 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		2A3A080E29EF2B8000EB8E8E /* CalorieDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieDataModel.swift; sourceTree = "<group>"; };
+		2A3A082029EF3D1A00EB8E8E /* StatisticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatisticsView.swift; path = "../../../../Downloads/WeightApp 5/WeightApp Watch App/ViewModels/Views/StatisticsView.swift"; sourceTree = "<group>"; };
+		2A3A082229EF3D2700EB8E8E /* CalorieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalorieView.swift; path = "../../../../Downloads/WeightApp 5/WeightApp Watch App/ViewModels/Views/CalorieView.swift"; sourceTree = "<group>"; };
+		2A3A082429EF3D2F00EB8E8E /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryView.swift; path = "../../../../Downloads/WeightApp 5/WeightApp Watch App/ViewModels/Views/HistoryView.swift"; sourceTree = "<group>"; };
+		2A3A087129EF480000EB8E8E /* ForgotPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
+		2A3A087329EF481800EB8E8E /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		2A3A087629EF485000EB8E8E /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		2A3A087829EF486A00EB8E8E /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
+		2A3A087A29EF487D00EB8E8E /* LayoutPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPreviews.swift; sourceTree = "<group>"; };
+		2A3A087C29EF488F00EB8E8E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		2A3A087E29EF48A400EB8E8E /* CloseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseView.swift; sourceTree = "<group>"; };
+		2A3A088129EF48C700EB8E8E /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
+		2A3A088329EF48DA00EB8E8E /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		2A3A088529EF48EB00EB8E8E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2A3A088829EF491400EB8E8E /* NewUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserInfo.swift; sourceTree = "<group>"; };
+		2A3A088A29EF492300EB8E8E /* NewUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserService.swift; sourceTree = "<group>"; };
+		2A3A088C29EF493500EB8E8E /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
+		2A3A089029EF496600EB8E8E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2A3A089429EF49D500EB8E8E /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
+		2A3A089629EF49E600EB8E8E /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		2A3A089929EF4BCD00EB8E8E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		2A3A089B29EF4BDD00EB8E8E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		2A3A089D29EF4BEF00EB8E8E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		2A3A089F29EF4D3D00EB8E8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA4C9EDC29C659F00041C482 /* WeightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4C9EDF29C659F00041C482 /* WeightAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightAppApp.swift; sourceTree = "<group>"; };
+		CA4C9EE329C659F10041C482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA4C9EE629C659F10041C482 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA4C9EEC29C659F10041C482 /* WeightApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeightApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4C9EF129C659F10041C482 /* WeightAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightAppApp.swift; sourceTree = "<group>"; };
+		CA4C9EF329C659F10041C482 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CA4C9EF529C659F10041C482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA4C9EF829C659F10041C482 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA4C9F0529C65C760041C482 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CA4C9F0729C660CE0041C482 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CA4C9F0929C66C8B0041C482 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		CA4C9F0B29C66D160041C482 /* WeightDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightDataModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA4C9ED929C659F00041C482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3A083F29EF41BB00EB8E8E /* FirebaseDatabase in Frameworks */,
+				2A3A084D29EF41BB00EB8E8E /* FirebaseFunctionsCombine-Community in Frameworks */,
+				2A3A084529EF41BB00EB8E8E /* FirebaseFirestore in Frameworks */,
+				2A3A083129EF41BB00EB8E8E /* FirebaseAnalyticsSwift in Frameworks */,
+				2A3A082D29EF41BB00EB8E8E /* FirebaseAnalytics in Frameworks */,
+				2A3A082F29EF41BB00EB8E8E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				2A3A085529EF41BB00EB8E8E /* FirebaseMLModelDownloader in Frameworks */,
+				2A3A084929EF41BB00EB8E8E /* FirebaseFirestoreSwift in Frameworks */,
+				2A3A083529EF41BB00EB8E8E /* FirebaseAppCheck in Frameworks */,
+				2A3A083329EF41BB00EB8E8E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				2A3A083929EF41BB00EB8E8E /* FirebaseAuth in Frameworks */,
+				2A3A083D29EF41BB00EB8E8E /* FirebaseCrashlytics in Frameworks */,
+				2A3A085D29EF41BB00EB8E8E /* FirebaseRemoteConfigSwift in Frameworks */,
+				2A3A084F29EF41BB00EB8E8E /* FirebaseInAppMessaging-Beta in Frameworks */,
+				2A3A084129EF41BB00EB8E8E /* FirebaseDatabaseSwift in Frameworks */,
+				2A3A084B29EF41BB00EB8E8E /* FirebaseFunctions in Frameworks */,
+				2A3A086129EF41BB00EB8E8E /* FirebaseStorageCombine-Community in Frameworks */,
+				2A3A085B29EF41BB00EB8E8E /* FirebaseRemoteConfig in Frameworks */,
+				2A3A083729EF41BB00EB8E8E /* FirebaseAppDistribution-Beta in Frameworks */,
+				2A3A083B29EF41BB00EB8E8E /* FirebaseAuthCombine-Community in Frameworks */,
+				2A3A085929EF41BB00EB8E8E /* FirebasePerformance in Frameworks */,
+				2A3A085129EF41BB00EB8E8E /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				2A3A085F29EF41BB00EB8E8E /* FirebaseStorage in Frameworks */,
+				2A3A084329EF41BB00EB8E8E /* FirebaseDynamicLinks in Frameworks */,
+				2A3A084729EF41BB00EB8E8E /* FirebaseFirestoreCombine-Community in Frameworks */,
+				2A3A085729EF41BB00EB8E8E /* FirebaseMessaging in Frameworks */,
+				2A3A085329EF41BB00EB8E8E /* FirebaseInstallations in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4C9EE929C659F10041C482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21525F4829DA1BA200C365D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A08A229EF4E9500EB8E8E /* Main */,
+				2A3A08A129EF4E4300EB8E8E /* Database */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A3A086F29EF47D900EB8E8E /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A088729EF48FE00EB8E8E /* NewUser */,
+				2A3A088029EF48B800EB8E8E /* Login */,
+				2A3A087529EF483100EB8E8E /* ReusableViews */,
+				2A3A087029EF47E600EB8E8E /* ForgotPassword */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		2A3A087029EF47E600EB8E8E /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A087129EF480000EB8E8E /* ForgotPasswordService.swift */,
+				2A3A087329EF481800EB8E8E /* ForgotPasswordViewModel.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		2A3A087529EF483100EB8E8E /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A087629EF485000EB8E8E /* TextInputView.swift */,
+				2A3A087829EF486A00EB8E8E /* PasswordInputView.swift */,
+				2A3A087A29EF487D00EB8E8E /* LayoutPreviews.swift */,
+				2A3A087C29EF488F00EB8E8E /* ButtonView.swift */,
+				2A3A087E29EF48A400EB8E8E /* CloseView.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		2A3A088029EF48B800EB8E8E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A088129EF48C700EB8E8E /* LoginCredentials.swift */,
+				2A3A088329EF48DA00EB8E8E /* LoginService.swift */,
+				2A3A088529EF48EB00EB8E8E /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2A3A088729EF48FE00EB8E8E /* NewUser */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A088829EF491400EB8E8E /* NewUserInfo.swift */,
+				2A3A088A29EF492300EB8E8E /* NewUserService.swift */,
+				2A3A088C29EF493500EB8E8E /* NewUserView.swift */,
+			);
+			path = NewUser;
+			sourceTree = "<group>";
+		};
+		2A3A088E29EF495700EB8E8E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A088F29EF495C00EB8E8E /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2A3A088F29EF495C00EB8E8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A089029EF496600EB8E8E /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A3A089229EF49A600EB8E8E /* SessionServices */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A089429EF49D500EB8E8E /* SessionUserDetails.swift */,
+				2A3A089629EF49E600EB8E8E /* SessionService.swift */,
+			);
+			path = SessionServices;
+			sourceTree = "<group>";
+		};
+		2A3A08A129EF4E4300EB8E8E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A089929EF4BCD00EB8E8E /* SignInView.swift */,
+				2A3A089B29EF4BDD00EB8E8E /* RegisterView.swift */,
+				2A3A089D29EF4BEF00EB8E8E /* ForgotPasswordView.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		2A3A08A229EF4E9500EB8E8E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				21525F4D29DA1ECC00C365D8 /* TabBarView.swift */,
+				21525F5129DA1FE300C365D8 /* ScaleView.swift */,
+				21525F4F29DA1FD100C365D8 /* ChartsView.swift */,
+				21525F5329DA24D200C365D8 /* HistoryView.swift */,
+				21525F4B29DA1D0D00C365D8 /* SettingsView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA4C9ED329C659F00041C482 = {
+			isa = PBXGroup;
+			children = (
+				2A3A089F29EF4D3D00EB8E8E /* GoogleService-Info.plist */,
+				CA4C9EDE29C659F00041C482 /* WeightApp */,
+				CA4C9EF029C659F10041C482 /* WeightApp Watch App */,
+				CA4C9EDD29C659F00041C482 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA4C9EDD29C659F00041C482 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA4C9EDC29C659F00041C482 /* WeightApp.app */,
+				CA4C9EEC29C659F10041C482 /* WeightApp Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA4C9EDE29C659F00041C482 /* WeightApp */ = {
+			isa = PBXGroup;
+			children = (
+				CA4C9EDF29C659F00041C482 /* WeightAppApp.swift */,
+				2A3A086F29EF47D900EB8E8E /* Modifier */,
+				2A3A088E29EF495700EB8E8E /* Home */,
+				2A3A089229EF49A600EB8E8E /* SessionServices */,
+				CA4C9EE329C659F10041C482 /* Assets.xcassets */,
+				21525F4829DA1BA200C365D8 /* Views */,
+				CA4C9EE529C659F10041C482 /* Preview Content */,
+			);
+			path = WeightApp;
+			sourceTree = "<group>";
+		};
+		CA4C9EE529C659F10041C482 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA4C9EE629C659F10041C482 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA4C9EF029C659F10041C482 /* WeightApp Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				CA803E9629CA1D0E00ADDB75 /* Models */,
+				CA4C9F0429C65C530041C482 /* ViewModels */,
+				CA4C9F0329C65C500041C482 /* Views */,
+				CA4C9EF129C659F10041C482 /* WeightAppApp.swift */,
+				CA4C9EF529C659F10041C482 /* Assets.xcassets */,
+				CA4C9EF729C659F10041C482 /* Preview Content */,
+			);
+			path = "WeightApp Watch App";
+			sourceTree = "<group>";
+		};
+		CA4C9EF729C659F10041C482 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA4C9EF829C659F10041C482 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA4C9F0329C65C500041C482 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A082429EF3D2F00EB8E8E /* HistoryView.swift */,
+				CA4C9EF329C659F10041C482 /* MainView.swift */,
+				CA4C9F0729C660CE0041C482 /* SettingsView.swift */,
+				2A3A082029EF3D1A00EB8E8E /* StatisticsView.swift */,
+				2A3A082229EF3D2700EB8E8E /* CalorieView.swift */,
+				CA4C9F0929C66C8B0041C482 /* ChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA4C9F0429C65C530041C482 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CA4C9F0529C65C760041C482 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CA803E9629CA1D0E00ADDB75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA4C9F0B29C66D160041C482 /* WeightDataModel.swift */,
+				2A3A080E29EF2B8000EB8E8E /* CalorieDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA4C9EDB29C659F00041C482 /* WeightApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4C9F0029C659F10041C482 /* Build configuration list for PBXNativeTarget "WeightApp" */;
+			buildPhases = (
+				CA4C9ED829C659F00041C482 /* Sources */,
+				CA4C9ED929C659F00041C482 /* Frameworks */,
+				CA4C9EDA29C659F00041C482 /* Resources */,
+				CA4C9EFF29C659F10041C482 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA4C9EEF29C659F10041C482 /* PBXTargetDependency */,
+			);
+			name = WeightApp;
+			packageProductDependencies = (
+				2A3A082C29EF41BB00EB8E8E /* FirebaseAnalytics */,
+				2A3A082E29EF41BB00EB8E8E /* FirebaseAnalyticsOnDeviceConversion */,
+				2A3A083029EF41BB00EB8E8E /* FirebaseAnalyticsSwift */,
+				2A3A083229EF41BB00EB8E8E /* FirebaseAnalyticsWithoutAdIdSupport */,
+				2A3A083429EF41BB00EB8E8E /* FirebaseAppCheck */,
+				2A3A083629EF41BB00EB8E8E /* FirebaseAppDistribution-Beta */,
+				2A3A083829EF41BB00EB8E8E /* FirebaseAuth */,
+				2A3A083A29EF41BB00EB8E8E /* FirebaseAuthCombine-Community */,
+				2A3A083C29EF41BB00EB8E8E /* FirebaseCrashlytics */,
+				2A3A083E29EF41BB00EB8E8E /* FirebaseDatabase */,
+				2A3A084029EF41BB00EB8E8E /* FirebaseDatabaseSwift */,
+				2A3A084229EF41BB00EB8E8E /* FirebaseDynamicLinks */,
+				2A3A084429EF41BB00EB8E8E /* FirebaseFirestore */,
+				2A3A084629EF41BB00EB8E8E /* FirebaseFirestoreCombine-Community */,
+				2A3A084829EF41BB00EB8E8E /* FirebaseFirestoreSwift */,
+				2A3A084A29EF41BB00EB8E8E /* FirebaseFunctions */,
+				2A3A084C29EF41BB00EB8E8E /* FirebaseFunctionsCombine-Community */,
+				2A3A084E29EF41BB00EB8E8E /* FirebaseInAppMessaging-Beta */,
+				2A3A085029EF41BB00EB8E8E /* FirebaseInAppMessagingSwift-Beta */,
+				2A3A085229EF41BB00EB8E8E /* FirebaseInstallations */,
+				2A3A085429EF41BB00EB8E8E /* FirebaseMLModelDownloader */,
+				2A3A085629EF41BB00EB8E8E /* FirebaseMessaging */,
+				2A3A085829EF41BB00EB8E8E /* FirebasePerformance */,
+				2A3A085A29EF41BB00EB8E8E /* FirebaseRemoteConfig */,
+				2A3A085C29EF41BB00EB8E8E /* FirebaseRemoteConfigSwift */,
+				2A3A085E29EF41BB00EB8E8E /* FirebaseStorage */,
+				2A3A086029EF41BB00EB8E8E /* FirebaseStorageCombine-Community */,
+			);
+			productName = WeightApp;
+			productReference = CA4C9EDC29C659F00041C482 /* WeightApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA4C9EEB29C659F10041C482 /* WeightApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4C9EFC29C659F10041C482 /* Build configuration list for PBXNativeTarget "WeightApp Watch App" */;
+			buildPhases = (
+				CA4C9EE829C659F10041C482 /* Sources */,
+				CA4C9EE929C659F10041C482 /* Frameworks */,
+				CA4C9EEA29C659F10041C482 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WeightApp Watch App";
+			packageProductDependencies = (
+			);
+			productName = "WeightApp Watch App";
+			productReference = CA4C9EEC29C659F10041C482 /* WeightApp Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA4C9ED429C659F00041C482 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					CA4C9EDB29C659F00041C482 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					CA4C9EEB29C659F10041C482 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = CA4C9ED729C659F00041C482 /* Build configuration list for PBXProject "WeightApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA4C9ED329C659F00041C482;
+			packageReferences = (
+				2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = CA4C9EDD29C659F00041C482 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA4C9EDB29C659F00041C482 /* WeightApp */,
+				CA4C9EEB29C659F10041C482 /* WeightApp Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA4C9EDA29C659F00041C482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4C9EE729C659F10041C482 /* Preview Assets.xcassets in Resources */,
+				CA4C9EE429C659F10041C482 /* Assets.xcassets in Resources */,
+				2A3A08A029EF4D3D00EB8E8E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4C9EEA29C659F10041C482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4C9EF929C659F10041C482 /* Preview Assets.xcassets in Resources */,
+				CA4C9EF629C659F10041C482 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA4C9ED829C659F00041C482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3A089529EF49D500EB8E8E /* SessionUserDetails.swift in Sources */,
+				2A3A088429EF48DA00EB8E8E /* LoginService.swift in Sources */,
+				2A3A088229EF48C700EB8E8E /* LoginCredentials.swift in Sources */,
+				2A3A087429EF481800EB8E8E /* ForgotPasswordViewModel.swift in Sources */,
+				2A3A087F29EF48A400EB8E8E /* CloseView.swift in Sources */,
+				2A3A088D29EF493500EB8E8E /* NewUserView.swift in Sources */,
+				2A3A087229EF480000EB8E8E /* ForgotPasswordService.swift in Sources */,
+				2A3A087D29EF488F00EB8E8E /* ButtonView.swift in Sources */,
+				21525F5229DA1FE300C365D8 /* ScaleView.swift in Sources */,
+				2A3A089E29EF4BEF00EB8E8E /* ForgotPasswordView.swift in Sources */,
+				21525F4C29DA1D0D00C365D8 /* SettingsView.swift in Sources */,
+				2A3A088929EF491400EB8E8E /* NewUserInfo.swift in Sources */,
+				2A3A088629EF48EB00EB8E8E /* LoginViewModel.swift in Sources */,
+				21525F4E29DA1ECC00C365D8 /* TabBarView.swift in Sources */,
+				21525F5029DA1FD100C365D8 /* ChartsView.swift in Sources */,
+				21525F4529D22C2A00C365D8 /* WeightDataModel.swift in Sources */,
+				CA4C9EE029C659F00041C482 /* WeightAppApp.swift in Sources */,
+				21525F5429DA24D200C365D8 /* HistoryView.swift in Sources */,
+				2A3A089C29EF4BDD00EB8E8E /* RegisterView.swift in Sources */,
+				2A3A089729EF49E600EB8E8E /* SessionService.swift in Sources */,
+				2A3A089A29EF4BCD00EB8E8E /* SignInView.swift in Sources */,
+				2A3A087729EF485000EB8E8E /* TextInputView.swift in Sources */,
+				21525F4729D22CF800C365D8 /* ChartView.swift in Sources */,
+				2A3A088B29EF492300EB8E8E /* NewUserService.swift in Sources */,
+				21525F4629D22C2D00C365D8 /* MainViewModel.swift in Sources */,
+				2A3A087929EF486A00EB8E8E /* PasswordInputView.swift in Sources */,
+				2A3A087B29EF487D00EB8E8E /* LayoutPreviews.swift in Sources */,
+				2A3A089129EF496600EB8E8E /* HomeView.swift in Sources */,
+				2A3A081029EF2BC400EB8E8E /* CalorieDataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4C9EE829C659F10041C482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4C9F0A29C66C8B0041C482 /* ChartView.swift in Sources */,
+				CA4C9F0C29C66D160041C482 /* WeightDataModel.swift in Sources */,
+				2A3A082329EF3D2700EB8E8E /* CalorieView.swift in Sources */,
+				CA4C9EF429C659F10041C482 /* MainView.swift in Sources */,
+				CA4C9F0829C660CE0041C482 /* SettingsView.swift in Sources */,
+				CA4C9EF229C659F10041C482 /* WeightAppApp.swift in Sources */,
+				2A3A082129EF3D1B00EB8E8E /* StatisticsView.swift in Sources */,
+				2A3A082529EF3D2F00EB8E8E /* HistoryView.swift in Sources */,
+				CA4C9F0629C65C760041C482 /* MainViewModel.swift in Sources */,
+				2A3A080F29EF2B8000EB8E8E /* CalorieDataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA4C9EEF29C659F10041C482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA4C9EEB29C659F10041C482 /* WeightApp Watch App */;
+			targetProxy = CA4C9EEE29C659F10041C482 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA4C9EFA29C659F10041C482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA4C9EFB29C659F10041C482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CA4C9EFD29C659F10041C482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WeightApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 2M5H6T53K2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WeightApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.jemalvarez.WeightApp;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jemalvarez.WeightApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		CA4C9EFE29C659F10041C482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WeightApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 2M5H6T53K2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WeightApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.jemalvarez.WeightApp;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jemalvarez.WeightApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		CA4C9F0129C659F10041C482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WeightApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 2M5H6T53K2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WeightApp;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Please allow use of bluetooth";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Please allow use of bluetooth";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jemalvarez.WeightApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA4C9F0229C659F10041C482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WeightApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 2M5H6T53K2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WeightApp;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Please allow use of bluetooth";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Please allow use of bluetooth";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jemalvarez.WeightApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA4C9ED729C659F00041C482 /* Build configuration list for PBXProject "WeightApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4C9EFA29C659F10041C482 /* Debug */,
+				CA4C9EFB29C659F10041C482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4C9EFC29C659F10041C482 /* Build configuration list for PBXNativeTarget "WeightApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4C9EFD29C659F10041C482 /* Debug */,
+				CA4C9EFE29C659F10041C482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4C9F0029C659F10041C482 /* Build configuration list for PBXNativeTarget "WeightApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4C9F0129C659F10041C482 /* Debug */,
+				CA4C9F0229C659F10041C482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A3A082C29EF41BB00EB8E8E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2A3A082E29EF41BB00EB8E8E /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		2A3A083029EF41BB00EB8E8E /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		2A3A083229EF41BB00EB8E8E /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		2A3A083429EF41BB00EB8E8E /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		2A3A083629EF41BB00EB8E8E /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		2A3A083829EF41BB00EB8E8E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2A3A083A29EF41BB00EB8E8E /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		2A3A083C29EF41BB00EB8E8E /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		2A3A083E29EF41BB00EB8E8E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		2A3A084029EF41BB00EB8E8E /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		2A3A084229EF41BB00EB8E8E /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		2A3A084429EF41BB00EB8E8E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2A3A084629EF41BB00EB8E8E /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		2A3A084829EF41BB00EB8E8E /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		2A3A084A29EF41BB00EB8E8E /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		2A3A084C29EF41BB00EB8E8E /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		2A3A084E29EF41BB00EB8E8E /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		2A3A085029EF41BB00EB8E8E /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		2A3A085229EF41BB00EB8E8E /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		2A3A085429EF41BB00EB8E8E /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		2A3A085629EF41BB00EB8E8E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		2A3A085829EF41BB00EB8E8E /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		2A3A085A29EF41BB00EB8E8E /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		2A3A085C29EF41BB00EB8E8E /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		2A3A085E29EF41BB00EB8E8E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		2A3A086029EF41BB00EB8E8E /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3A082B29EF41BB00EB8E8E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CA4C9ED429C659F00041C482 /* Project object */;
+}
