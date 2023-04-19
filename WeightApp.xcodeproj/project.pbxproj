@@ -293,12 +293,12 @@
 		CA4C9EDE29C659F00041C482 /* WeightApp */ = {
 			isa = PBXGroup;
 			children = (
+				CA4C9EE329C659F10041C482 /* Assets.xcassets */,
 				2A79AB5029EF86BD007187A8 /* Info.plist */,
 				CA4C9EDF29C659F00041C482 /* WeightAppApp.swift */,
 				2A3A086F29EF47D900EB8E8E /* Modifier */,
 				2A3A088E29EF495700EB8E8E /* Home */,
 				2A3A089229EF49A600EB8E8E /* SessionServices */,
-				CA4C9EE329C659F10041C482 /* Assets.xcassets */,
 				21525F4829DA1BA200C365D8 /* Views */,
 				CA4C9EE529C659F10041C482 /* Preview Content */,
 			);
