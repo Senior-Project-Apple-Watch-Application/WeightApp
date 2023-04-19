@@ -1,59 +1,17 @@
+//
+//  BluetoothPeripherals.swift
+//  WeightApp
+//
+//  Created by DJC on 4/18/23.
+//
 
 import SwiftUI
-import CoreBluetooth
-
-class BluetoothViewModel: NSObject, ObservableObject {
-    private var centralManager: CBCentralManager?
-    private var peripherals: [CBPeripheral] = []
-    @Published var peripheralNames: [String] = []
-    
-    override init() {
-        super.init()
-        self.centralManager = CBCentralManager(delegate: self, queue: .main)
-    }
-}
-
-extension BluetoothViewModel: CBCentralManagerDelegate {
-    func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        if central.state == .poweredOn {
-            self.centralManager?.scanForPeripherals(withServices: nil)
-        }
-    }
-    
-    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        if !peripherals.contains(peripheral) {
-            self.peripherals.append(peripheral)
-            self.peripheralNames.append(peripheral.name ?? peripheral.description)
-        }
-    }
-}
-
-struct SheetView: View {
-    
-    @ObservedObject private var bluetoothViewModel = BluetoothViewModel()
-    @Environment(\.dismiss) var dismiss
-    
-    var body: some View {
-        VStack {
-            List(bluetoothViewModel.peripheralNames, id: \.self) { peripheral in
-                Text(peripheral)
-            }
-            Spacer()
-            Text("Select a peripheral device")
-                .font(.headline)
-            Button("Press to dismiss") {
-                dismiss()
-            }
-            .font(.title)
-            .padding()
-        }
-    }
-}
 
 struct SettingsView: View {
-    
-    @State private var showingSheet = false
-    
+    // Bluetooth
+    @State private var showDevices = false
+    // Firebase
+    @EnvironmentObject var sessionService: SessionServiceImpl
     let projectURL = URL(string: "https://www.cis.fiu.edu")!
     
     var body: some View {
@@ -61,6 +19,7 @@ struct SettingsView: View {
             Form {
                 profileSection
                 devSection
+                logoutSection
             }
             .listStyle(GroupedListStyle())
             .navigationTitle("Settings")
@@ -70,12 +29,13 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        SettingsView().environmentObject(SessionServiceImpl())
     }
 }
 
 extension SettingsView {
     
+    // User Profile
     private var profileSection: some View {
         Section (header:Text("Profile")) {
             
@@ -104,16 +64,17 @@ extension SettingsView {
                     .frame(width: 30, height: 30)
                     .clipShape(RoundedRectangle(cornerRadius:5))
                 Button("Connect to a Scale") {
-                    showingSheet.toggle()
+                    showDevices.toggle()
                 }
                 .padding(.leading, 3)
-                .sheet(isPresented: $showingSheet) {
-                    SheetView()
+                .sheet(isPresented: $showDevices) {
+                    BluetoothPeripherals()
                 }
             }
         }
     }
     
+    // Developers
     private var devSection: some View {
         Section(
             header: Text("Developers"),
@@ -122,10 +83,25 @@ extension SettingsView {
                     Image("kfscis")
                         .resizable()
                         .scaledToFit()
+                    
                 }
                 .padding(.vertical)
-                Link("Project Website", destination: projectURL)
+                HStack {
+                    Link("Project Website", destination: projectURL)
+                }
             }
-        
+    }
+    
+    // Logout Button
+    private var logoutSection: some View {
+        Section() {
+            HStack{
+                Spacer()
+                Button("Logout") {
+                    sessionService.logout()
+                }
+                Spacer()
+            }
+        }
     }
 }

@@ -67,6 +67,7 @@
 		2A3A089C29EF4BDD00EB8E8E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A089B29EF4BDD00EB8E8E /* RegisterView.swift */; };
 		2A3A089E29EF4BEF00EB8E8E /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A089D29EF4BEF00EB8E8E /* ForgotPasswordView.swift */; };
 		2A3A08A029EF4D3D00EB8E8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A3A089F29EF4D3D00EB8E8E /* GoogleService-Info.plist */; };
+		2A93B4EB29EF5FB100423584 /* BluetoothPeripherals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A93B4EA29EF5FB100423584 /* BluetoothPeripherals.swift */; };
 		CA4C9EE029C659F00041C482 /* WeightAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C9EDF29C659F00041C482 /* WeightAppApp.swift */; };
 		CA4C9EE429C659F10041C482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4C9EE329C659F10041C482 /* Assets.xcassets */; };
 		CA4C9EE729C659F10041C482 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4C9EE629C659F10041C482 /* Preview Assets.xcassets */; };
@@ -135,6 +136,7 @@
 		2A3A089B29EF4BDD00EB8E8E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		2A3A089D29EF4BEF00EB8E8E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		2A3A089F29EF4D3D00EB8E8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2A93B4EA29EF5FB100423584 /* BluetoothPeripherals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPeripherals.swift; sourceTree = "<group>"; };
 		CA4C9EDC29C659F00041C482 /* WeightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4C9EDF29C659F00041C482 /* WeightAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightAppApp.swift; sourceTree = "<group>"; };
 		CA4C9EE329C659F10041C482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -294,21 +296,30 @@
 		2A3A08A229EF4E9500EB8E8E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2A93B4E929EF5F8A00423584 /* Settings */,
 				21525F4D29DA1ECC00C365D8 /* TabBarView.swift */,
 				21525F5129DA1FE300C365D8 /* ScaleView.swift */,
 				21525F4F29DA1FD100C365D8 /* ChartsView.swift */,
 				21525F5329DA24D200C365D8 /* HistoryView.swift */,
-				21525F4B29DA1D0D00C365D8 /* SettingsView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		2A93B4E929EF5F8A00423584 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				21525F4B29DA1D0D00C365D8 /* SettingsView.swift */,
+				2A93B4EA29EF5FB100423584 /* BluetoothPeripherals.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		CA4C9ED329C659F00041C482 = {
 			isa = PBXGroup;
 			children = (
 				2A3A089F29EF4D3D00EB8E8E /* GoogleService-Info.plist */,
-				CA4C9EDE29C659F00041C482 /* WeightApp-iOS */,
-				CA4C9EF029C659F10041C482 /* WeightApp-watchOS */,
+				CA4C9EDE29C659F00041C482 /* WeightApp */,
+				CA4C9EF029C659F10041C482 /* WeightApp Watch App */,
 				CA4C9EDD29C659F00041C482 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -322,7 +333,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA4C9EDE29C659F00041C482 /* WeightApp-iOS */ = {
+		CA4C9EDE29C659F00041C482 /* WeightApp */ = {
 			isa = PBXGroup;
 			children = (
 				CA4C9EDF29C659F00041C482 /* WeightAppApp.swift */,
@@ -333,7 +344,7 @@
 				21525F4829DA1BA200C365D8 /* Views */,
 				CA4C9EE529C659F10041C482 /* Preview Content */,
 			);
-			path = "WeightApp-iOS";
+			path = WeightApp;
 			sourceTree = "<group>";
 		};
 		CA4C9EE529C659F10041C482 /* Preview Content */ = {
@@ -344,7 +355,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CA4C9EF029C659F10041C482 /* WeightApp-watchOS */ = {
+		CA4C9EF029C659F10041C482 /* WeightApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
 				CA803E9629CA1D0E00ADDB75 /* Models */,
@@ -354,7 +365,7 @@
 				CA4C9EF529C659F10041C482 /* Assets.xcassets */,
 				CA4C9EF729C659F10041C482 /* Preview Content */,
 			);
-			path = "WeightApp-watchOS";
+			path = "WeightApp Watch App";
 			sourceTree = "<group>";
 		};
 		CA4C9EF729C659F10041C482 /* Preview Content */ = {
@@ -542,6 +553,7 @@
 				2A3A087D29EF488F00EB8E8E /* ButtonView.swift in Sources */,
 				21525F5229DA1FE300C365D8 /* ScaleView.swift in Sources */,
 				2A3A089E29EF4BEF00EB8E8E /* ForgotPasswordView.swift in Sources */,
+				2A93B4EB29EF5FB100423584 /* BluetoothPeripherals.swift in Sources */,
 				21525F4C29DA1D0D00C365D8 /* SettingsView.swift in Sources */,
 				2A3A088929EF491400EB8E8E /* NewUserInfo.swift in Sources */,
 				2A3A088629EF48EB00EB8E8E /* LoginViewModel.swift in Sources */,
@@ -770,7 +782,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeightApp-watchOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WeightApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 2M5H6T53K2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -805,7 +817,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeightApp-watchOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WeightApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 2M5H6T53K2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
