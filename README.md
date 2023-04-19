@@ -7,6 +7,8 @@ This project was set up using standard options for *iOS App with Watch App.*
 - Include Notification Scene: **on**
 - Include Tests: **on**
 
+<img src="https://github.com/Senior-Project-Apple-Watch-Application/WeightApp/blob/main/Walkthrough.gif" width="40" />
+
 # How to get started
 1. Download/install Xcode.
 2. You'll need to link your GitHub account to Xcode. Follow steps 1 & 2 from [this article.](http://irenebosque.com/how-to-xcode-and-github/)
