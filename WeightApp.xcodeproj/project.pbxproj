@@ -112,9 +112,9 @@
 		21525F5129DA1FE300C365D8 /* ScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = "<group>"; };
 		21525F5329DA24D200C365D8 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		2A3A080E29EF2B8000EB8E8E /* CalorieDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieDataModel.swift; sourceTree = "<group>"; };
-		2A3A082029EF3D1A00EB8E8E /* StatisticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatisticsView.swift; path = "../../../../Downloads/WeightApp 5/WeightApp Watch App/ViewModels/Views/StatisticsView.swift"; sourceTree = "<group>"; };
-		2A3A082229EF3D2700EB8E8E /* CalorieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalorieView.swift; path = "../../../../Downloads/WeightApp 5/WeightApp Watch App/ViewModels/Views/CalorieView.swift"; sourceTree = "<group>"; };
-		2A3A082429EF3D2F00EB8E8E /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryView.swift; path = "../../../../Downloads/WeightApp 5/WeightApp Watch App/ViewModels/Views/HistoryView.swift"; sourceTree = "<group>"; };
+		2A3A082029EF3D1A00EB8E8E /* StatisticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		2A3A082229EF3D2700EB8E8E /* CalorieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalorieView.swift; sourceTree = "<group>"; };
+		2A3A082429EF3D2F00EB8E8E /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		2A3A087129EF480000EB8E8E /* ForgotPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
 		2A3A087329EF481800EB8E8E /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		2A3A087629EF485000EB8E8E /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
