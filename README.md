@@ -7,7 +7,7 @@ This project was set up using standard options for *iOS App with Watch App.*
 - Include Notification Scene: **on**
 - Include Tests: **on**
 
-<img src="https://github.com/Senior-Project-Apple-Watch-Application/WeightApp/blob/main/Walkthrough.gif" width="500" />
+<img src="https://github.com/Senior-Project-Apple-Watch-Application/WeightApp/blob/main/Walkthrough.gif" width="600" />
 
 # How to get started
 1. Download/install Xcode.
