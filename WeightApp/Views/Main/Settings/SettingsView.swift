@@ -11,7 +11,7 @@ struct SettingsView: View {
     // Bluetooth
     @State private var showDevices = false
     // Firebase
-    @EnvironmentObject var sessionService: SessionServiceImpl
+    @StateObject var sessionService = SessionServiceImpl()
     let projectURL = URL(string: "https://www.cis.fiu.edu")!
     
     var body: some View {
@@ -54,7 +54,9 @@ extension SettingsView {
                 Image("firebase")
                     .resizable()
                     .frame(width: 30, height: 30)
-                Link("Edit User Information", destination: projectURL)
+                Button("Edit User Information") {
+                    
+                }
                     .padding(.leading, 3)
             }
             
@@ -78,7 +80,7 @@ extension SettingsView {
     private var devSection: some View {
         Section(
             header: Text("Developers"),
-            footer: Text("This application is in conjuntion with Knight Foundation School of Computing and Information Sciences Undergraduate students as part of a Spring 2023 Semester Senior Design Project.")) {
+            footer: Text("Continuation of development of an app showcasing weight. Credit to Product Owner Jessica Ramella and Computer Science studens at FIU.")) {
                 HStack(alignment:.top) {
                     Image("kfscis")
                         .resizable()
