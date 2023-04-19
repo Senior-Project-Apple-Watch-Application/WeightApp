@@ -258,6 +258,7 @@
 				21525F5129DA1FE300C365D8 /* ScaleView.swift */,
 				21525F4F29DA1FD100C365D8 /* ChartsView.swift */,
 				21525F5329DA24D200C365D8 /* HistoryView.swift */,
+				21525F4B29DA1D0D00C365D8 /* SettingsView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -265,7 +266,6 @@
 		2A93B4E929EF5F8A00423584 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				21525F4B29DA1D0D00C365D8 /* SettingsView.swift */,
 				2A93B4EA29EF5FB100423584 /* BluetoothPeripherals.swift */,
 			);
 			path = Settings;

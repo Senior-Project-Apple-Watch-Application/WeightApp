@@ -61,7 +61,7 @@ extension SettingsView {
             }
             
             HStack() {
-                Image("logo")
+                Image("icon")
                     .resizable()
                     .frame(width: 30, height: 30)
                     .clipShape(RoundedRectangle(cornerRadius:5))
