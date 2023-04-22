@@ -3,7 +3,7 @@
 
 <img src="https://github.com/Senior-Project-Apple-Watch-Application/WeightApp/blob/main/Walkthrough.gif" width="600" />
 
-A demonstration of the applicaiton can be found here: https://www.youtube.com/embed/N6BcR5O69X4
+A demonstration can be found here: https://www.youtube.com/embed/N6BcR5O69X4
 
 # How to get started
 1. Download/install Xcode.
