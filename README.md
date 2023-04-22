@@ -1,13 +1,9 @@
 # Apple Watch Weight App
-*Apple Watch Weight App* is an iOS and watchOS app built for the purpose of constantly displaying a person's weight using a bluetooth-connected device. It is currently in development for FIU Capstone Spring 2023.
-
-This project was set up using standard options for *iOS App with Watch App.*
-- Interface: SwiftUI
-- Language: Swift
-- Include Notification Scene: **on**
-- Include Tests: **on**
+*Apple Watch Weight App* is an iOS and watchOS app built for the purpose of displaying a person's weight. There are two components to this project, a software application and a hardware weight scale. The scale is currently in devleopment by engineering studens at FIU. The plan is to create a scale similar to the size of an Apple air-tag that can fit inside a users shoe. The device would then send data via bluetooth, for the weight application to collect and display via means of a graph. 
 
 <img src="https://github.com/Senior-Project-Apple-Watch-Application/WeightApp/blob/main/Walkthrough.gif" width="600" />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N6BcR5O69X4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # How to get started
 1. Download/install Xcode.
