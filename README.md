@@ -3,12 +3,13 @@
 
 <img src="https://github.com/Senior-Project-Apple-Watch-Application/WeightApp/blob/main/Walkthrough.gif" width="600" />
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N6BcR5O69X4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+A demonstration of the applicaiton can be found here: https://www.youtube.com/embed/N6BcR5O69X4
 
 # How to get started
 1. Download/install Xcode.
 2. You'll need to link your GitHub account to Xcode. Follow steps 1 & 2 from [this article.](http://irenebosque.com/how-to-xcode-and-github/)
 3. **Fork** this repository. 
+4. Configure a new Firebase authenication key. Follow steps [here](https://firebase.google.com/docs/ios/setup)
    
    This will create a copy of this repository on your GitHub account. In order to stay organized, contributing to the main branch should be done through **pull requests.** (You should be able to merge your own pull requests.) We will definitely be discussing this further in future meetings.
    
