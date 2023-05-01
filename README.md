@@ -12,22 +12,22 @@ iOS:
 * Info.plist
 * AppDelegate
 * Modifiers
-*  New Users
-*  Login
-*  Reusable Views (Buttons, text inputs, etc.)
-*  Forgot password
+   * New Users
+   * Login
+   * Reusable Views (Buttons, text inputs, etc.)
+   * Forgot password
 * Home View (testing Firebase)
 * Session Services
 * Main Views
-*  TabBar
-*     Scale
-*     Charts
-*     History
-*     Settings
-*  Database
-*     Signin
-*     Register
-*     Forgot Password
+   * TabBar
+      * Scale
+      * Charts
+      * History
+      * Settings
+   * Database
+      * Signin
+      * Register
+      * Forgot Password
 
 WatchOS:
 * Image Assets
