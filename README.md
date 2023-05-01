@@ -8,7 +8,7 @@ A demonstration can be found here: https://www.youtube.com/embed/N6BcR5O69X4
 # File Directory Structure
 The Codebase will contain two main components, one for the WatchOS and iOS.
 iOS:
-* image assets
+* Image Assets
 * Info.plist
 * AppDelegate
 * Modifiers
@@ -33,16 +33,16 @@ WatchOS:
 * Image Assets
 * App Delegate
 * Models
-*  Weight Data Model
-*  Calorie Data Model
+  * Weight Data Model
+  * Calorie Data Model
 * Main View Model
 * Views
-*  Main
-*  History
-*  Settings
-*  Statistics
-*  Calorie
-*  Chart
+    * Main
+    * History
+    * Settings
+    * Statistics
+    * Calorie
+    * Chart
 
 
 # How to get started
