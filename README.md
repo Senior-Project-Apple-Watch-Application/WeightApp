@@ -5,6 +5,46 @@
 
 A demonstration can be found here: https://www.youtube.com/embed/N6BcR5O69X4
 
+# File Directory Structure
+The Codebase will contain two main components, one for the WatchOS and iOS.
+iOS:
+* image assets
+* Info.plist
+* AppDelegate
+* Modifiers
+*  New Users
+*  Login
+*  Reusable Views (Buttons, text inputs, etc.)
+*  Forgot password
+* Home View (testing Firebase)
+* Session Services
+* Main Views
+*  TabBar
+*     Scale
+*     Charts
+*     History
+*     Settings
+*  Database
+*     Signin
+*     Register
+*     Forgot Password
+
+WatchOS:
+* Image Assets
+* App Delegate
+* Models
+*  Weight Data Model
+*  Calorie Data Model
+* Main View Model
+* Views
+*  Main
+*  History
+*  Settings
+*  Statistics
+*  Calorie
+*  Chart
+
+
 # How to get started
 1. Download/install Xcode.
 2. Configure a new Firebase authenication key. Follow steps [here](https://firebase.google.com/docs/ios/setup)
